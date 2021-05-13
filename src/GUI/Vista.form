@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.Vista">
+  <grid id="27dc6" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="708" height="451"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="aa7b9" binding="tabbedPane">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value=""/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="63f1d" binding="panelClientes" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="idiomaResourceBundle" title-key="tabbedPaneClientes"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="e7501" binding="panelDatosCliente" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="22ce5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblNombreCliente"/>
+                    </properties>
+                  </component>
+                  <component id="6c0c7" class="javax.swing.JTextField" binding="txtNombreCliente">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="d0da7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblApellidosCliente"/>
+                    </properties>
+                  </component>
+                  <component id="6c411" class="javax.swing.JTextField" binding="txtApellidosCliente">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="2d386" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblDniCliente"/>
+                    </properties>
+                  </component>
+                  <component id="1fb33" class="javax.swing.JTextField" binding="txtDniCliente">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="12a1d" binding="panelOtrosDatos" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="b54b0" class="javax.swing.JCheckBox" binding="chBoxNuevo">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Nuevo Cliente"/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="lblNuevoCliente"/>
+                    </properties>
+                  </component>
+                  <component id="114e4" class="javax.swing.JCheckBox" binding="chBoxMenor">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblMenorEdad"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="d76c6" binding="panelListaClientes">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1f156" class="javax.swing.JList" binding="listaClientes">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="85e15" binding="panelBotonesCliente" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="192aa" class="javax.swing.JButton" binding="btnAnadirCliente">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="AnadirCliente"/>
+                      <icon value="24x24/user-new-3.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipAnadirCliente"/>
+                    </properties>
+                  </component>
+                  <component id="1aabd" class="javax.swing.JButton" binding="btnEliminarCliente">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="EliminarCliente"/>
+                      <icon value="24x24/user-delete-2.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipEliminarCliente"/>
+                    </properties>
+                  </component>
+                  <component id="f88e5" class="javax.swing.JButton" binding="btnModificarCliente">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="ModificarCliente"/>
+                      <icon value="24x24/user-properties.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipModificarCliente"/>
+                    </properties>
+                  </component>
+                  <grid id="712d0" binding="panelRelacionPerrosClientes" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="cd8b6">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="12fff" class="javax.swing.JList" binding="listaRelacionPerrosClientes">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <component id="ac260" class="javax.swing.JButton" binding="botRelacionPerrosClientes">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <actionCommand value="RelacionarPerroCliente"/>
+                          <icon value="24x24/user-group-new-2.png"/>
+                          <text value=""/>
+                          <toolTipText resource-bundle="idiomaResourceBundle" key="tooltipRelacionPerroDueno"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="3c31f" binding="panelPerros" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="idiomaResourceBundle" title-key="tabbedPanePerros"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="bcb75" binding="panelDatosPerro" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="12aa0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblNombrePerro"/>
+                    </properties>
+                  </component>
+                  <component id="a1d65" class="javax.swing.JTextField" binding="txtNombrePerro">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="139d1" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblEdadPerro"/>
+                    </properties>
+                  </component>
+                  <component id="e13be" class="javax.swing.JTextField" binding="txtEdadPerro">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="5ba6c" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblPesoPerro"/>
+                    </properties>
+                  </component>
+                  <component id="26d0e" class="javax.swing.JTextField" binding="txtPesoPerro">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="e2404" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblFechaIngreso"/>
+                    </properties>
+                  </component>
+                  <component id="47526" class="com.github.lgooddatepicker.components.DatePicker" binding="datePickerPerro">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="Seleccionar Fecha Ingreso Perro"/>
+                    </properties>
+                  </component>
+                  <component id="7a509" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblFotoPerro"/>
+                    </properties>
+                  </component>
+                  <grid id="f5e39" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="fa956" class="javax.swing.JButton" binding="botAnadirImagen">
+                        <constraints border-constraint="West"/>
+                        <properties>
+                          <actionCommand value="AnadirFotoPerro"/>
+                          <enabled value="true"/>
+                          <horizontalAlignment value="0"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="24x24/insert-image-3.png"/>
+                          <preferredSize width="30" height="30"/>
+                          <text value=""/>
+                          <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipAnadirFotoPerro"/>
+                        </properties>
+                      </component>
+                      <component id="410fc" class="javax.swing.JButton" binding="botEliminarImagen">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <actionCommand value="EliminarFotoPerro"/>
+                          <icon value="24x24/list-remove-24.png"/>
+                          <text resource-bundle="idiomaResourceBundle" key="botEliminarImagen"/>
+                          <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipEliminarFotoPerro"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="ff11b" class="javax.swing.JLabel" binding="lblFotoPerro">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipImagenPerro"/>
+                    </properties>
+                  </component>
+                  <grid id="a78e6" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="c03b7">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="8f644" class="javax.swing.JList" binding="listClientesPerros">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <scrollpane id="44ac5">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="5cadc" class="javax.swing.JList" binding="listDuenos">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <component id="73ce6" class="javax.swing.JLabel" binding="lblDuenos">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="idiomaResourceBundle" key="lblDuenoPerro"/>
+                        </properties>
+                      </component>
+                      <component id="14216" class="javax.swing.JLabel" binding="lblClientes">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="idiomaResourceBundle" key="lblClientesPerros"/>
+                        </properties>
+                      </component>
+                      <grid id="130af" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="e84e0" class="javax.swing.JButton" binding="btnEliminarDuenos">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <actionCommand value="Eliminar Dueno Provisional"/>
+                              <icon value="24x24/arrow-left-2.png"/>
+                              <text resource-bundle="idiomaResourceBundle" key="tollTipEliminarDueno"/>
+                              <toolTipText resource-bundle="idiomaResourceBundle" key="tollTipEliminarDueno"/>
+                            </properties>
+                          </component>
+                          <component id="ac380" class="javax.swing.JButton" binding="btnAnadirDuenos">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <actionCommand value="Anadir Dueno Provisional"/>
+                              <icon value="24x24/arrow-right-2.png"/>
+                              <text resource-bundle="idiomaResourceBundle" key="tooltipAnadirDueno"/>
+                              <toolTipText resource-bundle="idiomaResourceBundle" key="tooltipAnadirDueno"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <scrollpane id="ba178">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="33409" class="javax.swing.JList" binding="listaPerros">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="141c3" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="3dc45" class="javax.swing.JButton" binding="btnAnadirPerro">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="AnadirPerro"/>
+                      <text resource-bundle="idiomaResourceBundle" key="botAnadirPerro"/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="tooltipAnadirPerro"/>
+                    </properties>
+                  </component>
+                  <component id="96a1c" class="javax.swing.JButton" binding="btnModificarPerro">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="ModificarPerro"/>
+                      <text resource-bundle="idiomaResourceBundle" key="botModificarPerro"/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipModificarPerro"/>
+                    </properties>
+                  </component>
+                  <component id="f33d3" class="javax.swing.JButton" binding="btnEliminarPerro">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="EliminarPerro"/>
+                      <text resource-bundle="idiomaResourceBundle" key="botEliminarPerro"/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipEliminarPerro"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="a352b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text resource-bundle="idiomaResourceBundle" key="lblListadoPerros"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="39c5a" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="idiomaResourceBundle" title-key="tabbedPaneMedicos"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="a8483" binding="panelDatosMedico" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4463" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblNombreMedico"/>
+                    </properties>
+                  </component>
+                  <component id="3ba48" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblApellidosMedico"/>
+                    </properties>
+                  </component>
+                  <component id="e22d5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblIdentificadorMedico"/>
+                    </properties>
+                  </component>
+                  <component id="c566a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblTelefonoMedico"/>
+                    </properties>
+                  </component>
+                  <component id="beaa9" class="javax.swing.JTextField" binding="txtTelefonoMedico">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="e7545" class="javax.swing.JTextField" binding="txtIdentificadorMedico">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="b5b0f" class="javax.swing.JTextField" binding="txtApellidosMedico">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="4be56" class="javax.swing.JTextField" binding="txtNombreMedico">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="9dab2" binding="panelListaMedicos" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="f47ee">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="6698b" class="javax.swing.JList" binding="listMedicos">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="34280" binding="panelRelacionPerros" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="a75f3">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="90ab8" class="javax.swing.JList" binding="listRelacionPerros">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <component id="89c4f" class="javax.swing.JButton" binding="botRelacionarPerrosMedicos">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <actionCommand value="RelacionarPerros"/>
+                          <icon value="24x24/user-group-new-2.png"/>
+                          <text value=""/>
+                          <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipRelacionPerroMedico"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="3f895" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Perros:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="43583" binding="panelBotonesMedicos" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="536ed" class="javax.swing.JButton" binding="botEliminarMedico">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="EliminarMedico"/>
+                      <icon value="24x24/user-delete-2.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipEliminarMedico"/>
+                    </properties>
+                  </component>
+                  <component id="6e96a" class="javax.swing.JButton" binding="botAnadirMedico">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="AnadirMedico"/>
+                      <icon value="24x24/user-new-3.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipBotAnadirMedico"/>
+                    </properties>
+                  </component>
+                  <component id="f9c75" class="javax.swing.JButton" binding="botModificarMedico">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="ModificarMedico"/>
+                      <icon value="24x24/user-properties.png"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourceBundle" key="tooltipModificarMedico"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="3737f" binding="panelHorario" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="87d4e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text resource-bundle="idiomaResourceBundle" key="lblHorario"/>
+                    </properties>
+                  </component>
+                  <grid id="c7b81" binding="panelChBox" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <hspacer id="ec9cc">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="f46c9" class="javax.swing.JRadioButton" binding="RdBtnManana">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="idiomaResourceBundle" key="RdbtnManana"/>
+                        </properties>
+                      </component>
+                      <component id="2a074" class="javax.swing.JRadioButton" binding="RdBtnTarde">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="idiomaResourceBundle" key="RdbtnTarde"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <grid id="247f8" binding="panelBotones" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a371a" class="javax.swing.JButton" binding="botCargarDatos">
+            <constraints/>
+            <properties>
+              <actionCommand value="Cargar"/>
+              <horizontalAlignment value="0"/>
+              <icon value="24x24/document-open-24.png"/>
+              <maximumSize width="30" height="30"/>
+              <minimumSize width="30" height="30"/>
+              <preferredSize width="30" height="30"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipCargar"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="5b4fe" class="javax.swing.JButton" binding="botGuardarDatos">
+            <constraints/>
+            <properties>
+              <actionCommand value="Guardar"/>
+              <icon value="24x24/document-save-24.png"/>
+              <preferredSize width="30" height="30"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipGuardar"/>
+            </properties>
+          </component>
+          <component id="16f99" class="javax.swing.JButton" binding="botGrafica">
+            <constraints/>
+            <properties>
+              <icon value="24x24/view-statistics.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipGrafico"/>
+            </properties>
+          </component>
+          <component id="e09ce" class="javax.swing.JButton" binding="botGrafica2">
+            <constraints/>
+            <properties>
+              <icon value="24x24/office-chart-pie.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipDiagrama2"/>
+            </properties>
+          </component>
+          <component id="26723" class="javax.swing.JButton" binding="botInforme">
+            <constraints/>
+            <properties>
+              <icon value="24x24/jaspersoft_icon.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c1cdd" class="javax.swing.JButton" binding="botInforme2">
+            <constraints/>
+            <properties>
+              <icon value="24x24/jaspersoft_icon.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="a57c" class="javax.swing.JButton" binding="manualDeUsuarioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <actionCommand value="Manual"/>
+              <icon value="24x24/klipper_dock.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="be5e1" class="javax.swing.JButton" binding="botIdioma">
+            <constraints/>
+            <properties>
+              <hideActionText value="false"/>
+              <icon value="24x24/system-settings.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourceBundle" key="toolTipSeleccionarIdioma"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="grupoHorario">
+      <member id="2f36f"/>
+      <member id="9c838"/>
+      <member id="f46c9"/>
+      <member id="2a074"/>
+    </group>
+  </buttonGroups>
+</form>
