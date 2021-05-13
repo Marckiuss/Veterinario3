@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Veterinario3">
+    <output-path>$PROJECT_DIR$/out/artifacts/Veterinario3</output-path>
+    <root id="archive" name="Veterinario3.jar">
+      <element id="directory" name="Base">
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/Veterinario1/Base/Cliente.class" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/Veterinario1/Base/Medico.class" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/Veterinario1/Base/Perro.class" />
+      </element>
+    </root>
+  </artifact>
+</component>
